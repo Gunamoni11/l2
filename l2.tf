@@ -9,7 +9,7 @@ resource "aws_lb" "test" {
   subnets            = var.subnets
 }
 module "a2"{
-esource = "git::https://github.com/Gunamoni11/a2.git"
+source = "git::https://github.com/Gunamoni11/a2.git"
 depends_on =[ 
     aws_launch_template.alt.id
  ]

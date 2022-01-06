@@ -8,6 +8,7 @@ resource "aws_lb" "test" {
   security_groups    = var.security_groups
   subnets            = var.subnets
 }
+resource = "git::https://github.com/Gunamoni11/a2.git"
 depends_on =[ 
     aws_launch_template.alt.id
  ]
